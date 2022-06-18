@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/Bem/css/blocks/layout.css">
+    <link rel="stylesheet" href="/Bem/css/blocks/brand.css">
+    <link rel="stylesheet" href="/Bem/css/blocks/sidebar-menu.css">
+    <link rel="stylesheet" href="/Bem/css/blocks/trends-for-you.css">
+    <link rel="stylesheet" href="/Bem/css/blocks/tweet-home.css">
+    <link rel="stylesheet" href="/Bem/css/blocks/tweet.css">
+    <script src="https://use.fontawesome.com/584a3534f2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class="layout">
+        <div class="layout__left-sidebar">
+            <div>
+                <img src="/Images/twitter.svg" class="brand">
+            </div>             
+            <div class="sidebar-menu">
+                <div class="sidebar-menu__items sidebar-menu__items--active">
+                    <a href="/Bem/index.html"><img src="/Bem/svg/home.svg"  class="sidebar-menu__items-icon">
+                        Home</a>
+                    
+                </div>
+                <div class="sidebar-menu__items">
+                    <img src="/Bem/svg/explore.svg"  class="sidebar-menu__items-icon">
+                    Explore
+                </div>
+                <div class="sidebar-menu__items">
+                    <img src="/Bem/svg/communities.svg"  class="sidebar-menu__items-icon">
+                    Communities
+                </div>
+                <div class="sidebar-menu__items">
+                    <img src="/Bem/svg/notifications.svg"  class="sidebar-menu__items-icon">
+                    Notifications
+                </div>
+                <div class="sidebar-menu__items">
+                    <a href="chat.html"><img src="/Bem/svg/messages.svg" class="sidebar-menu__items-icon">Messages</a>
+                    
+                    
+                </div>
+                <div class="sidebar-menu__items">
+                    <img src="/Bem/svg/bookmarks.svg"   class="sidebar-menu__items-icon">
+                    Bookmarks
+                </div>
+                <div class="sidebar-menu__items">
+                    <img src="/Bem/svg/profile.svg"  class="sidebar-menu__items-icon">
+                    Profile
+                </div>
+                <div class="sidebar-menu__items">
+                    <img src="/Bem/svg/more.svg"  class="sidebar-menu__items-icon">
+                    More
+                </div>
+                <button class="sidebar-menu__items-btn">Tweet</button>
+                <button class="sidebar-menu__items-btn" id="logout">Log Out</button>
+            </div>
+        </div>
+        <div class="layout__main">
+            <div class="tweet__home">
+                <h1 class="tweet__home-heading">Home</h1>
+                <img src="/Images/profile.jpg" class="tweet__home-profile">
+                <img src="/Bem/svg/tweets.svg" class="tweet__home-toptweets">                
+                <button class="tweet__home-btn" id="tweet">Tweet</button>
+                <input type="text" placeholder="What`s happening?" class="tweet__home-input" id="input">
+            </div>  
+
+
+            <div class="tweet__home">
+                <img src="/Images/profile.jpg" class="tweet__home-profile">
+                <img src="/Bem/svg/tweets.svg" class="tweet__home-toptweets">                
+                <input type="text" placeholder="What`s happening?" class="tweet__home-input" id="newtweet">                
+                <button id="updatebtn">Update Tweet</button>
+            </div>
+
+            <div class="uploadimage">
+                <label for="files"><i class="fa fa-picture-o h1"></i></label>
+                <input type="file" style="display: none;" id="files">
+                <h5 id="progress"></h5>
+                <p>file name</p>
+                <button id="uploadfile">Upload file</button>
+                <button id="upload" class="btn btn-primary" style="display:none;" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Upoading file...
+                  </button>            
+                
+                    
+                
+                
+            </div>
+
+            <!-- <div class="tweet__home">
+                <img src="/Images/profile.jpg" class="tweet__home-profile">
+                <img src="/Bem/svg/tweets.svg" class="tweet__home-toptweets">                
+                <input type="text" placeholder="What`s happening?" class="tweet__home-input" id="newtweet1">
+                
+                <button id="deletebtn">Delete Tweet</button>
+            </div> -->
+            
+            <div class="tweet" id="output">
+                
+                
+                <!-- <i id="tools" class="fa fa-ellipsis-h"></i>
+                <div class="tweet_action" id="action">
+                    <i id="times" class="fa fa-times"></i>
+                    <i class="fa fa-trash-o">Delete</i>
+                    <i class="fa fa-pencil">Edit</i>
+                </div> -->
+                
+                
+
+                
+
+                
+                <img src="" class="tweet__author-logo">
+            </div>
+            <div class="tweet__main">
+                <div class="tweet__author-name">
+
+                </div>
+                <div class="tweet__author-slug">
+                    
+                </div>
+                <div class="tweet__publish-time">
+                    
+                </div>
+            </div>             
+
+        </div>
+        <div class="layout__right-sidebar-container">
+            <div class="layout__right-sidebar"> 
+                               
+                <div class="trends-for-you">
+                    <input  type="text" placeholder="Search Twitter" id="twittersearch" class="trends-for-you__search">
+                    <img src="/Bem/svg/search.svg" id="searchtwitterbtn" class="trends-for-you__search-icon">
+                </div>
+                <div id="postOutPut">
+                    
+                </div>
+                
+
+            </div>
+
+            
+
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+    <script src="/js/config.js"></script>
+    <script src="/js/signup.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="/js/tweet.js"></script>
+    <script src="/js/tweets.js"></script>
+    <script src="/js/signout.js"></script>
+    <script src="/js/uploadfile.js"></script>
+    <script src="/js/query.js"></script>
+
+    
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+.layout {
+    display: grid;
+    grid-template-columns: 275px auto 350px;
+    margin: 0 auto;
+}
+
+.layout__right-sidebar {
+    position: fixed;
+    
+}
+.layout__main-title {
+    font-size: 20px;
+    text-align: start;
+    line-height: 24px;
+    letter-spacing: normal;
+}
+.layout__main1 {
+    overflow-y: scroll;
+    width: 50%;
+}
+
+.layout__main-settings {
+    height: 20px;
+    position: absolute;
+    top: 25px;
+    left: 550px;
+}
+
+.layout__main-newmessage {
+    height: 20px;
+    position: absolute;
+    top: 25px;
+    left: 590px;
+}
+
+.layout__main-dm {
+    height: 20px;
+    position: absolute;
+    left: 330px;
+    top: 65px;
+}
+
+.newmessages {
+    position: relative;
+    top: 100%;
+    right: 50%;
+}
+
+
+

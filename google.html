@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="/signup.css">
+    <script src="https://use.fontawesome.com/584a3534f2.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class="mainhome">
+        <div class="leftdiv">
+            <svg viewBox="0 0 24 24" aria-hidden="true"
+                class="r-k200y r-1cvl2hr r-4qtqp9 r-yyyyoo r-5sfk15 r-dnmrzs r-kzbkwu r-bnwqim r-1plcrui r-lrvibr">
+                <g>
+                    <path
+                        d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z">
+                    </path>
+                </g>
+            </svg>
+        </div>
+        <div class="rightdiv">
+            <button onclick="googleSignup()">
+                <img src="/Images/Google.png" width="25px">
+                <span>Sign up with Google</span>
+            </button>            
+            <button class="login" id="loginBtn">
+                <span>Log in</span>                
+            </button>
+            
+            <div class="sign">
+                <p>Already have an account?</p>
+                <a href="" class="log-btn">Sign in</a>
+            </div>
+            
+        </div>  
+            <div class="signup" id="signupform">
+                <div class="signup-holder" >
+                    <div style="display: flex; width: 100%; justify-content: space-between;"><h5>Sign up</h5> <p style="cursor: pointer;" id="dismissSignup">x</p></div>
+                    <h5 id="errormessage1"></h5>                    
+                    <div class="alert alert-danger" style="display: none;" id="errormessagealert2" role="alert">
+                        <h5 id="errormessage2"></h5>                        
+                    </div>
+                    <div><input type="text" id="username" placeholder="Enter your name"></div>
+                    <div><input type="text" id="userphonenum" placeholder="Enter your phone number"></div>
+                    <div><input type="email" id="email" placeholder="Enter your email"></div>
+                    <div><input type="password" id="password" placeholder="Enter your password"></div>
+                    <button id="signup">SIGN UP</button>
+                    <button style="display: none;" class="btn btn-primary" id="signingupbtn" type="button" disabled>
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        Signing up...
+                    </button>                    
+                </div>  
+            </div>   
+
+            <div class="signin" id="loginform">
+                <div class="login-holder" >
+                    <div style="display: flex; width: 100%; justify-content: space-between;"><h5>Log in</h5> <p style="cursor: pointer;" id="dismissLogin">x</p></div>
+                    <div><input type="email" id="email1" placeholder="Enter your email"></div>
+                    <div><input type="password" id="password1" placeholder="Enter your password"></div>
+                    <button id="login">LOG IN</a> </button>
+                    <p>Forgot password? <a href="/resetpassword.html">Click here to reset</a></p>                    
+                </div>  
+            </div>   
+                      
+        
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    
+    <script src="/js/config.js"></script>
+    <script src="/js/signup.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="/js/tweet.js"></script>
+    <script src="/js/tweets.js"></script>
+    <script src="/js/signout.js"></script>
+    <script src="/js/uploadfile.js"></script>
+    <script src="/js/query.js"></script>
+    
+
+</body>
+</html>

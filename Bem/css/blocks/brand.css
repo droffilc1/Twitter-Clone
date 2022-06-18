@@ -1,0 +1,14 @@
+.brand{
+    height: 28px;
+    padding: 10px;    
+    position: fixed;
+    top: 20px;
+    left: 40px;
+}
+
+.brand:hover {
+    background: #E8F5FD;
+    cursor: pointer;
+    border-radius: 50%;
+    
+}

@@ -1,0 +1,15 @@
+.trends-for-you__search {
+    padding: 10px 70px;
+    border-radius: 20px;    
+    background:#e6ecf0;
+    border: 1px solid #e6ecf0;    
+    color: #77858F;
+}
+
+.trends-for-you__search-icon {
+    height: 20px;
+    position: absolute;
+    right: 280px;
+    top: 8px;
+    filter: invert(51%) sepia(21%) saturate(234%) hue-rotate(162deg) brightness(96%) contrast(88%);
+}
